@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Euforia Gym</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <style>
+    body {margin:0;font-family:Arial,sans-serif;background:#f5f5f5;color:#222;}
+    header {background:#ffcc00;text-align:center;padding:20px;}
+    header img {height:80px;border-radius:50%;}
+    h1 {margin:10px 0 0;}
+    .sedes {display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;padding:20px;}
+    .sede {background:white;border-radius:12px;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,0.15);}
+    .sede img {width:100%;height:220px;object-fit:cover;}
+    .sede h2 {margin:15px;font-size:20px;color:#333;}
+    .sede button {margin:0 15px 15px;padding:10px 15px;border:none;border-radius:8px;background:#ffcc00;color:#000;font-size:16px;cursor:pointer;transition:0.3s;}
+    .sede button:hover {background:#e6b800;}
+    .info {display:none;padding:15px;border-top:1px solid #ddd;font-size:15px;background:#fafafa;}
+    .info p {margin:5px 0;}
+    footer {text-align:center;padding:15px;background:#222;color:white;margin-top:20px;}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" alt="Euforia Gym Logo">
+    <h1>Euforia Gym</h1>
+  </header>
+
+  <section class="sedes">
+    <div class="sede">
+      <img src="img/sede-porvenir.png" alt="Sede El Porvenir">
+      <h2>Sede El Porvenir</h2>
+      <button onclick="toggleInfo('porvenir')">Más información: +</button>
+      <div class="info" id="porvenir">
+        <p><strong>📍 Ubicación:</strong> WCRC+7MW, Prol. Buenos Aires, Chimbote 02802</p>
+        <p><strong>📞 Teléfono:</strong> +51 919 473 674</p>
+        <p><strong>💰 Mensualidades:</strong><br>- Plan Básico: S/80<br>- Plan Full: S/120<br>- Plan Premium: S/150<br><em>*No incluye feriados</em></p>
+        <p><strong>🕒 Horarios:</strong><br>Lunes - Sábado: 6am - 10pm<br>Domingo: 7am - 3pm</p>
+      </div>
+    </div>
+
+    <div class="sede">
+      <img src="img/sede-centro.png" alt="Sede Centro">
+      <h2>Sede Centro</h2>
+      <button onclick="toggleInfo('centro')">Más información: +</button>
+      <div class="info" id="centro">
+        <p><strong>📍 Ubicación:</strong> Jirón Manuel Ruiz 465, Chimbote 02803</p>
+        <p><strong>📞 Teléfono:</strong> +51 982 814 717</p>
+        <p><strong>💰 Mensualidades:</strong><br>- Plan Básico: S/80<br>- Plan Full: S/120<br>- Plan Premium: S/150<br><em>*No incluye feriados</em></p>
+        <p><strong>🕒 Horarios:</strong><br>Lunes - Sábado: 6am - 10pm<br>Domingo: 7am - 3pm</p>
+      </div>
+    </div>
+
+    <div class="sede">
+      <img src="img/sede-ovalo.png" alt="Sede Óvalo">
+      <h2>Sede Óvalo</h2>
+      <button onclick="toggleInfo('ovalo')">Más información: +</button>
+      <div class="info" id="ovalo">
+        <p><strong>📍 Ubicación:</strong> Nuevo Chimbote 02711</p>
+        <p><strong>📞 Teléfono:</strong> +51 982 814 717</p>
+        <p><strong>💰 Mensualidades:</strong><br>- Plan Básico: S/80<br>- Plan Full: S/120<br>- Plan Premium: S/150<br><em>*No incluye feriados</em></p>
+        <p><strong>🕒 Horarios:</strong><br>Lunes - Sábado: 6am - 10pm<br>Domingo: 7am - 3pm</p>
+      </div>
+    </div>
+
+    <div class="sede">
+      <img src="img/sede-marina.png" alt="Sede La Marina">
+      <h2>Sede La Marina</h2>
+      <button onclick="toggleInfo('marina')">Más información: +</button>
+      <div class="info" id="marina">
+        <p><strong>📍 Ubicación:</strong> Av. La Marina 365, Nuevo Chimbote 02711</p>
+        <p><strong>📞 Teléfono:</strong> +51 919 473 674</p>
+        <p><strong>💰 Mensualidades:</strong><br>- Plan Básico: S/80<br>- Plan Full: S/120<br>- Plan Premium: S/150<br><em>*No incluye feriados</em></p>
+        <p><strong>🕒 Horarios:</strong><br>Lunes - Sábado: 6am - 10pm<br>Domingo: 7am - 3pm</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>&copy; 2025 Euforia Gym - Todos los derechos reservados</footer>
+
+  <script>
+    function toggleInfo(id) {
+      const section = document.getElementById(id);
+      section.style.display = section.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
