@@ -8,7 +8,7 @@
 body {
     margin: 0;
     height: 100vh;
-    background: #111;
+    background: white; /* ANTES #111 */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,14 +20,14 @@ body {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.7);
+    background: rgba(255,255,255,0.9); /* antes negro */
     justify-content: center;
     align-items: center;
     z-index: 10;
 }
 
 #content {
-    background: white;
+    background: black; /* ANTES blanco */
     padding: 25px;
     border-radius: 15px;
     text-align: center;
@@ -47,11 +47,9 @@ video {
 }
 
 h1 {
-    color: #ff4081;
+    color: white; /* ANTES rosado */
 }
-h1 {
-    color: #ff4081;
-}
+
 /* Confeti */
 .confetti {
     position: fixed;
@@ -84,8 +82,8 @@ button {
 
 <div id="modal">
     <div id="content">
-<video id="video" src="OWO.mp4" autoplay controls></video>
-        <h1>🎉 Feliz Miércoles🎉</h1>
+        <video id="video" src="OWO.mp4" autoplay controls></video>
+        <h1>🎉 Feliz Miércoles 🎉</h1>
         <h1>Apest🐻s</h1>
     </div>
 </div>
